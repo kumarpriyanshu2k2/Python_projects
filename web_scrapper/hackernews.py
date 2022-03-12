@@ -24,9 +24,9 @@ content+= ('<br><br>End of Message')
 print("composing Email ....")
 Server="smtp.gmail.com"
 Port="587"
-From="kumar.priyanshu2k02@gmail.com"
+From=input('enter gmail address from which you want to send the email from: \n')
+Pass=input('enter your gmail password \n')
 To=input('enter the receiver\'s mail address: \n')
-Pass="Lonewolfpk@2305"
 msg=MIMEMultipart()
 msg['Subject']=f"Top Hackernews Headlines {now.day}-{now.month}-{now.year}"
 msg['To']=To
